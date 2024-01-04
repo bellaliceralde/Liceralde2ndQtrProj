@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayawVista.ph</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: url('website bg.png') center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #555;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 209, 220, 0.8);
+        }
+
+        #header-name {
+            color: #6A0572;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        #search-bar {
+            max-width: 400px;
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            background-color: rgba(255, 209, 220, 0.8);
+            color: #6A0572;
+        }
+
+        #menu {
+            display: flex;
+            background-color: rgba(255, 209, 220, 0.8);
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        #menu > div {
+            background-color: rgba(255, 209, 220, 0.8);
+            padding: 10px;
+            flex: 1;
+            text-align: center;
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #menu div a {
+            color: #6A0572;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #menu div:hover {
+            background-color: #D988B9;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        /* Additional styles for the Dance Genre's tab */
+        #dance-genres-content {
+            padding: 20px;
+        }
+
+        #dance-genres-content h2 {
+            color: #6A0572;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+        }
+
+        #dance-genre-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dance-genre-item {
+            background-color: rgba(255, 209, 220, 0.8);
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dance-genre-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .dance-genre-item a {
+            color: #6A0572;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            display: block; /* Ensures the entire area is clickable */
+            margin-top: 10px; /* Spacing between image and text */
+        }
+
+        .dance-genre-item:hover {
+            background-color: #D988B9;
+        }
+
+        /* Hover effect for genre names */
+        .dance-genre-item p:hover {
+            color: #D988B9;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="header-name"><span>SayawVista.ph</span></h1>
+    </div>
+
+    <!-- Real search bar -->
+    <input type="text" id="search-bar" placeholder="Search...">
+
+    <div id="menu">
+        <div class="menu-home"> <a href="Home page.html">Home page</a> </div>
+        <div class="menu-about-us"> <a href="About us.html">About Us</a> </div>
+        <div class="menu-dance-genres"> <a href="Dance Genre's.html">Dance Genre's</a> </div>
+        <div class="menu-dance-showcase"> <a href="Dance Showcase.html">Dance Showcase</a> </div>
+        <div class="menu-connect-explore"> <a href="Dance Inspiration.html">Connect and Explore</a> </div>
+    </div>
+
+    <!-- Dance Genre's content -->
+    <div id="dance-genres-content">
+        <h2>Dance Genre's</h2>
+        <ul id="dance-genre-list">
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/hip-hop" target="_blank">
+                    <img src="hiphop.jpg" alt="Hip Hop">
+                    <p>Hip Hop</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/ballet" target="_blank">
+                    <img src="ballet.jpg" alt="Ballet">
+                    <p>Ballet</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/tap-dance" target="_blank">
+                    <img src="tapdance.png" alt="Tap Dance">
+                    <p>Tap Dance</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/modern-dance" target="_blank">
+                    <img src="moderndance.png" alt="Modern Dance">
+                    <p>Modern Dance</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/folk-dance" target="_blank">
+                    <img src="folkdance.jpg" alt="Folk Dance">
+                    <p>Folk Dance</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/jazz-dance" target="_blank">
+                    <img src="jazz.jpg" alt="Jazz">
+                    <p>Jazz</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/break-dance" target="_blank">
+                    <img src="breakdance.jpg" alt="Breakdancing">
+                    <p>Breakdancing</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/sports/acrobatics" target="_blank">
+                    <img src="acrobaticdance.jpg" alt="Acrobatic Dance">
+                    <p>Acrobatic Dance</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/belly-dance" target="_blank">
+                    <img src="bellydance.png" alt="Belly Dance">
+                    <p>Belly Dance</p>
+                </a>
+            </li>
+            <li class="dance-genre-item">
+                <a href="https://www.britannica.com/art/ballroom-dance" target="_blank">
+                    <img src="ballroom.jpg" alt="Ballroom Dance">
+                    <p>Ballroom Dance</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

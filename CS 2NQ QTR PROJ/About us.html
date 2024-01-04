@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayawVista.ph</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: url('website bg.png') center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #555;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 209, 220, 0.8);
+        }
+
+        #header-name {
+            color: #6A0572;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        #search-bar {
+            max-width: 400px;
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            background-color: rgba(255, 209, 220, 0.8);
+            color: #6A0572;
+        }
+
+        #menu {
+            display: flex;
+            background-color: rgba(255, 209, 220, 0.8);
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        #menu > div {
+            background-color: rgba(255, 209, 220, 0.8);
+            padding: 10px;
+            flex: 1;
+            text-align: center;
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #menu div a {
+            color: #6A0572;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #menu div:hover {
+            background-color: #D988B9;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        /* Additional styles for the owner's content */
+        #content-owner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        #owner-text {
+            max-width: 60%;
+        }
+
+        #owner-image {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        #footer {
+            background-color: rgba(255, 209, 220, 0.8);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #footer p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        #footer p img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: #6A0572;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #footer a:hover {
+            color: #D988B9;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="header-name"><span>SayawVista.ph</span></h1>
+    </div>
+
+    <!-- Real search bar -->
+    <input type="text" id="search-bar" placeholder="Search...">
+
+    <div id="menu">
+        <div class="menu-home"> <a href="Home page.html">Home page</a> </div>
+        <div class="menu-about-us"> <a href="About us.html">About Us</a> </div>
+        <div class="menu-dance-genres"> <a href="Dance Genre's.html">Dance Genre's</a> </div>
+        <div class="menu-dance-showcase"> <a href="Dance Showcase.html">Dance Showcase</a> </div>
+        <div class="menu-connect-explore"> <a href="Dance Inspiration.html">Connect and Explore</a> </div>
+    </div>
+
+    <!-- Additional content for the owner -->
+    <div id="content-owner">
+        <div id="owner-text">
+            <p>Greetings, dance enthusiasts! I'm Clyza Yzabelle O. Liceralde, 
+            the proud owner of SayawVista.ph, a captivating online realm where 
+            the beauty of dance is celebrated. SayawVista.ph transcends the 
+            traditional boundaries of a website; it's my heartfelt endeavor to 
+            create a dynamic space where the magic of dance unfolds in every 
+            pixel and resonates in every beat. As you navigate through the 
+            diverse rhythms and rich tapestry of dance genres on SayawVista.ph, 
+            you'll discover a curated platform that goes beyond being just a 
+            website—it's a celebration of the transformative power of dance. 
+            Join me on this rhythmic journey, where SayawVista.ph becomes your 
+            companion in exploring the limitless dance floor and the boundless 
+            joy that dance brings to our lives. Welcome to the heartbeat of dance!</p>
+        </div>
+        
+        <!-- Placeholder for owner's image -->
+        <img id="owner-image" src="owner.jpg" alt="Clyza Yzabelle O. Liceralde">
+    </div>
+
+    <!-- Footer with updated contact information and image sprites -->
+    <div id="footer">
+        <p>
+            <a href="mailto:cyliceralde@src.pshs.edu.ph">
+                <img src="gmail.jpg" alt="Gmail Logo">
+                cyliceralde@src.pshs.edu.ph
+            </a>
+            <a href="tel:09764494385">
+                <img src="telephone.jpg" alt="Telephone Logo">
+                09764494385
+            </a>
+            <a href="https://www.facebook.com/BELLAAAATTT">
+                <img src="facebook.png" alt="Facebook Logo">
+                Bella Liceralde
+            </a>
+        </p>
+    </div>
+</body>
+</html>

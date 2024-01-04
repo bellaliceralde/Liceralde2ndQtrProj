@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayawVista.ph</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: url('website bg.png') center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #555;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 209, 220, 0.8);
+        }
+
+        #header-name {
+            color: #6A0572;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        #search-bar {
+            max-width: 400px;
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            background-color: rgba(255, 209, 220, 0.8);
+            color: #6A0572;
+        }
+
+        #menu {
+            display: flex;
+            background-color: rgba(255, 209, 220, 0.8);
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        #menu>div {
+            background-color: rgba(255, 209, 220, 0.8);
+            padding: 10px;
+            flex: 1;
+            text-align: center;
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        #menu div a {
+            color: #6A0572;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #menu div:hover {
+            background-color: #D988B9;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .video-container {
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="header-name"><span>SayawVista.ph</span></h1>
+    </div>
+
+    <!-- Real search bar -->
+    <input type="text" id="search-bar" placeholder="Search...">
+
+    <div id="menu">
+        <div class="menu-home"> <a href="Home page.html">Home page</a> </div>
+        <div class="menu-about-us"> <a href="About us.html">About Us</a> </div>
+        <div class="menu-dance-genres"> <a href="Dance Genre's.html">Dance Genre's</a> </div>
+        <div class="menu-dance-showcase"> <a href="Dance Showcase.html">Dance Showcase</a> </div>
+        <div class="menu-connect-explore"> <a href="Dance Inspiration.html">Connect and Explore</a> </div>
+    </div>
+
+    <div id="content">
+        <p>Welcome to the Dance Showcase! Here, we present a mesmerizing collection of dance performances that captivate the spirit and showcase the diversity of the dance world. Each performance tells a unique story through movement, rhythm, and emotion.</p>
+
+        <p>Experience the magic of dance through our carefully curated showcase, where talented dancers bring their artistry to life. From traditional forms to contemporary expressions, our Dance Showcase is a celebration of creativity and passion.</p>
+
+        <p>Click, watch, and immerse yourself in the beauty of dance. Feel the energy, be inspired, and join us in appreciating the art of movement. The Dance Showcase is a testament to the universal language that connects us all—dance.</p>
+
+        <!-- Dance Genre: Hip Hop Dance -->
+        <div class="video-container">
+            <h2>Hip Hop Dance</h2>
+            <video width="560" height="315" controls>
+                <source src="hiphop.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<div class="video-container">
+            <h2>Ballet Dance</h2>
+            <video width="560" height="315" controls>
+                <source src="ballet.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		
+		<div class="video-container">
+            <h2>Tap Dance</h2>
+            <video width="560" height="315" controls>
+                <source src="tapdance.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<div class="video-container">
+            <h2>Modern Dance</h2>
+            <video width="560" height="315" controls>
+                <source src="moderndance.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<div class="video-container">
+            <h2>Folk Dance</h2>
+            <video width="560" height="315" controls>
+                <source src="folkdance.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<div class="video-container">
+            <h2>Jazz</h2>
+            <video width="560" height="315" controls>
+                <source src="jazz.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<div class="video-container">
+            <h2>Breakdancing</h2>
+            <video width="560" height="315" controls>
+                <source src="breakdance.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<div class="video-container">
+            <h2>Acrobatic Dance</h2>
+            <video width="560" height="315" controls>
+                <source src="acrobaticdance.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<div class="video-container">
+            <h2>Belly Dance</h2>
+            <video width="560" height="315" controls>
+                <source src="bellydance.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+		<div class="video-container">
+            <h2>Ballroom Dance</h2>
+            <video width="560" height="315" controls>
+                <source src="ballroomdance.mp4" type="video/mp4">
+            </video>
+        </div>
+		
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!-- ConnectAndExplore.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayawVista.ph</title>
+    <style>
+	* {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: url('website bg.png') center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #555;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(255, 209, 220, 0.8); /* Adding some transparency to make the text more readable */
+        }
+
+        #header-name {
+            color: #6A0572;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        #search-bar {
+            max-width: 400px;
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            background-color: rgba(255, 209, 220, 0.8);
+            color: #6A0572;
+        }
+
+        #menu {
+            display: flex;
+            background-color: rgba(255, 209, 220, 0.8);
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        #menu > div {
+            background-color: rgba(255, 209, 220, 0.8);
+            padding: 10px;
+            flex: 1;
+            text-align: center;
+            border: 2px solid #D988B9;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        #menu div a {
+            color: #6A0572;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+        #menu div:hover {
+            background-color: #D988B9;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 2em;
+            color: #6A0572;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+         .inspiration-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .quote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #6A0572;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .dance-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+     .inspiration-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .quote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #6A0572;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .quote-description {
+            text-align: justify;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+         .quote-person {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .person-image {
+            border-radius: 50%;
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px; /* Adjust as needed */
+        }
+
+        .quote-description {
+            text-align: justify;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 id="header-name"><span>SayawVista.ph</span></h1>
+    </div>
+
+    <!-- Real search bar -->
+    <input type="text" id="search-bar" placeholder="Search...">
+
+    <div id="menu">
+        <div class="menu-home"> <a href="Home page.html">Home page</a> </div>
+        <div class="menu-about-us"> <a href="About us.html">About Us</a> </div>
+        <div class="menu-dance-genres"> <a href="Dance Genre's.html">Dance Genre's</a> </div>
+        <div class="menu-dance-showcase"> <a href="Dance Showcase.html">Dance Showcase</a> </div>
+        <div class="menu-dance-inspiration"> <a href="DanceInspiration.html">Dance Inspiration</a> </div>
+    </div>
+
+    <div id="content" class="inspiration-container">
+        <div class="title">Dance Inspiration</div>
+
+        <!-- Martha Graham -->
+        <div class="quote-person">
+            <img class="person-image" src="martha.jpg" alt="Martha Graham Image">
+            <div class="quote">
+                "Dance is the hidden language of the soul." - Martha Graham
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>Martha Graham, an American modern dancer and choreographer, expressed the profound connection between dance and the innermost feelings of the soul. Her groundbreaking work and innovative approach to dance have left an indelible mark on the world of performing arts.</p>
+        </div>
+
+        <!-- Add more dance inspirations here -->
+
+        <!-- Example 2 -->
+        <div class="quote-person">
+            <img class="person-image" src="albert.jpg" alt="Example Image">
+            <div class="quote">
+                "Dancers are the athletes of God" -Albert Einstein
+            </div>
+        </div>
+
+        <div class="quote-description">
+		<p>Albert Einstein's quote, "Dancers are the athletes of God," suggests that dancers embody a unique athleticism with a divine, spiritual dimension, emphasizing their physical prowess and transcendent connection to art. The phrase underscores the beauty, grace, and expressive qualities of dance as a form of divine expression.</p>
+        </div>
+
+        <!-- Example 3 -->
+        <div class="quote-person">
+            <img class="person-image" src="john.jpg" alt="Example Image">
+            <div class="quote">
+                "Dance is the poetry of the foot." - John Dryden
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>John Dryden beautifully captures the essence of dance as the poetry of the foot. Each step and gesture narrate a story, expressing emotions and tales through the language of movement.</p>
+        </div>
+
+        <!-- Example 4 -->
+        <div class="quote-person">
+            <img class="person-image" src="hopi.png" alt="Example Image">
+            <div class="quote">
+                "To watch us dance is to hear our hearts speak." - Hopi 
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>Dance is a heartfelt conversation without words. Witnessing the dance is listening to the rhythm of the hearts, echoing the emotions and stories of those who gracefully move to its beat.</p>
+        </div>
+
+        <!-- Example 5 -->
+        <div class="quote-person">
+            <img class="person-image" src="michael.jpg" alt="Example Image">
+            <div class="quote">
+                "Any kind of dancing is better than no dancing at all" -Michael Jordan
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>While often attributed to Michael Jordan, the quote "Any kind of dancing is better than no dancing at all" implies that engaging in any form of dance is valuable and beneficial, emphasizing the positive impact of movement and expression on one's well-being. The statement encourages the idea that the act of dancing, regardless of the style or skill level, contributes to a sense of joy, physical activity, and overall positive experience.</p>
+        </div>
+
+        <!-- Example 6 -->
+        <div class="quote-person">
+            <img class="person-image" src="rudolf.jpg" alt="Example Image">
+            <div class="quote">
+                "Dance is the language of the body. Speak with grace." - Rudolf Nureyev
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>Rudolf Nureyev, the iconic ballet dancer, emphasizes the importance of grace in the language of the body. Let every dance movement be a conversation, eloquently spoken with the elegance of grace.</p>
+        </div>
+
+        <!-- Example 7 -->
+        <div class="quote-person">
+            <img class="person-image" src="marthaa.jpg" alt="Example Image">
+            <div class="quote">
+                "Dance is the song of the body. Either of joy or pain." - Martha Graham
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>Martha Graham once again beautifully encapsulates the dual nature of dance. It can be a joyful celebration or a poignant expression of pain, echoing the diverse range of human emotions through movement.</p>
+        </div>
+
+        <!-- Example 8 -->
+        <div class="quote-person">
+            <img class="person-image" src="mary.jpg" alt="Example Image">
+            <div class="quote">
+                "In every dance, the steps may change, but the joy of dancing remains." - Mary Oliver
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>Mary Oliver's perspective on dance highlights the enduring joy that transcends the changing steps. Dance is a constant source of happiness, even as the choreography evolves with each new rhythm.</p>
+        </div>
+
+        <!-- Example 9 -->
+        <div class="quote-person">
+            <img class="person-image" src="rumi.jpg" alt="Example Image">
+            <div class="quote">
+                "Dance, when you're broken open. Dance, if you've torn the bandage off." - Rumi
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>Rumi invites us to dance not only in moments of joy but also in times of vulnerability and healing. Dance becomes a powerful expression, embracing the beauty of openness and resilience.</p>
+        </div>
+
+        <!-- Example 10 -->
+        <div class="quote-person">
+            <img class="person-image" src="marthaaa.jpg" alt="Example Image">
+            <div class="quote">
+                "Dance is the hidden language of the soul." - Martha Graham
+            </div>
+        </div>
+
+        <div class="quote-description">
+            <p>Martha Graham's timeless quote serves as a reminder of the profound connection between dance and the innermost feelings of the soul. Let the hidden language of your soul unfold on the dance floor.</p>
+        </div>
+
+        <!-- Back to Home link -->
+        <div id="back-to-home">
+            <a href="Home page.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
